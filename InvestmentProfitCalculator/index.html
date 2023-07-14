@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestmentTool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <div class="mainDiv blurred-box">  
+        <div class="title">Profit Calculator</div>
+        <button  id="desc-btn"> Open Description</button>
+        <div class="description " id="description">
+            <div class="desc-header">
+                <div class="desc-title">Description</div>
+                <button id="close-desc-btn" class="close-btn">&times;</button>
+            </div>
+            <div class="desc-body">
+                This is a simple calculator that will calculate your Profit
+                and your total investmentValue after investing at an ETF or a stock.
+                So What is an ETF?<br>                                                  
+                An ETF is a basket of securities, shares of which are sold on an exchange.
+                They combine features and potential benefits similar to those of stocks, 
+                mutual funds, or bonds. Like individual stocks, ETF shares are traded throughout
+                the day at prices that change based on supply and demand.
+                If you dont understand just google some shit mate...
+                -<br>
+                Field Explanation..                                                
+                Initial Investment : refers to the initial money you want to invest.               
+                Number of years : refers to the  number of years that you will
+                let your investment on the market.             
+                Investment Per year : refers to the extra money you will invest yearly.                
+                Average return percentage : refers to the average return value
+                of the ETF/stock each year.  
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <div class="dataInput">
+        <div class="inputDiv">
+            <h6> Initial Investment </h6>
+            <input type="text" id="initialInvestment" placeholder="ex 10000">
+        </div> 
+        <div class="inputDiv">
+            <h6> Number of years </h6>
+            <input type="text" id = "years" placeholder="ex 10" >
+        </div> 
+        <div class="inputDiv">
+            <h6> Investment per Year </h6>
+            <input type="text" id="investmentPerYear" placeholder="ex 3000">
+        </div> 
+        <div class="inputDiv">
+            <h6> Average return percentage </h6>
+            <input type="text" id="averageReturn" placeholder="ex 8" >
+        </div> 
+    </div>
+    <button id="result-btn"> Calculate </button>
+    </div>
+
+
+    <div class="result  " id="result">
+        <div class="result-header">
+            <div class="result-title">Results</div>
+            <button id="close-result-btn" class="close-btn">&times;</button>
+        </div>
+        <div id="data-results" class="result-body">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
